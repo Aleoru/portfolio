@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Eater|Griffy&display=swap" rel="stylesheet">
+    <title>Halloween Party</title>
+
+    <style>
+        body {background-color: #252A31;}
+        #wrapper {background-image: url("imagenes/halloweenjpg.jpg");
+                  background-repeat: no-repeat;
+                  width: 1200px;
+                  height: 770px;
+                  margin:auto;
+                  border-radius: 100px;
+                  box-shadow: rgb(11, 15, 19) 20px 20px 20px,
+                  rgb(11, 15, 19) 20px 20px 20px,
+                  rgb(11, 15, 19) 20px 20px 20px,
+                  rgb(11, 15, 19) 20px 20px 20px;
+            }
+        #h1 {position:absolute;  /*Lo que se escribe no se mueve*/
+            text-align:center;
+            top:20px;
+            left:250px;
+            font-family: 'Eater', cursive;
+            font-size: 250%;
+            color:#1B2935;
+            }
+        #p1 {
+            position:absolute;
+            text-align: center;
+            font-family: 'Times New Roman', cursive;
+            top:40px;
+            left:850px;
+            font-size: 200%;
+            color:rgb(255, 204, 0);
+        }
+        #p2 {
+            position:absolute;
+            text-align: center;
+            font-family: 'Griffy', cursive;
+            top:230px;
+            left:250px;
+            font-size: 180%;
+            color:#BBCAD6;
+        }
+        #p3 {
+            position:absolute;
+            text-align: center;
+            font-family: 'Griffy', cursive;
+            top:150px;
+            left:900px;
+            font-size: 140%;
+            color:#BBCAD6;
+        }    
+        #box {
+            position:absolute;
+            top:55px;
+            left:240px;
+            width:550px;
+            height: 65px;
+            /*border:1px solid white;*/
+        }          
+        #caja {
+            position:absolute;
+            top:300px;
+            left:500px;
+            width:200px;
+            height: 200px;
+            border:1px solid white;
+        }   
+        #pervertido {
+            position:absolute;
+            top:300px;
+            left:940px;
+            width:390px;
+            height: 330px;
+            /*border:1px solid white;*/
+        }
+        #fbi{position: absolute;
+            top:200px;
+            left:500px;
+            visibility:hidden;}
+        
+
+    </style>
+
+    <script>
+        function mostrar(id){
+            document.getElementById(id).style.visibility="visible";
+        }
+        
+        function ocultar(id){
+            document.getElementById(id).style.visibility="hidden";
+        }
+        function sonar(id){
+            document.getElementById(id).play();
+        }
+        function parar(id){
+            document.getElementById(id).pause();
+        }
+        </script>
+</head>
+<body>
+    <audio id="openup">
+        <source src="resources/sonidos/fbi-open-up-meme-full-full-hd-hq.mp3" type="audio/mp3">
+    </audio>
+    <div id=wrapper>
+        <h1 id=h1>Scary Halloween party</h1>
+        <div id=box></div>
+        <p id=p1>oh! Two pumpkins</p>
+        <p id=p2>Come here, closer...</p>
+        <p id=p3>Yeah, we have something you may like... hehehe<br>
+        Why... don't you... click on me...? hehehe</p>
+        
+        <div id=pervertido onclick="mostrar('fbi');sonar('openup')"></div>
+        <img id= "fbi" src="imagenes\fbiv2.gif"></img>
+        </div>
+        </body>
+        </html>

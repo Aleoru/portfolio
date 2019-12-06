@@ -1,0 +1,40 @@
+body {font-family: 'Yanone Kaffeesatz', sans-serif;
+      background-color:rgb(4, 5, 24);}
+#wrapper {width:85%;
+          background-color:rgb(4, 5, 24);
+          margin:auto;}
+header {position:relative;
+        background-image:url("imagenes/universe-1566161_1920.jpg");
+        background-size:cover;
+        background-position:center;
+        height:300px;}
+#titulo {position:absolute;
+         width:40%;
+         top:125px;
+         left:0px;
+         right:0px;
+         margin-left:auto;
+         margin-right:auto;
+
+         font-family: 'Yanone Kaffeesatz', sans-serif;
+         font-size:2.5em;
+         background-color:rgba(255, 255, 255, 0.7);
+         text-align:center;}
+       h1 {text-align:center;}
+       div.polaroid {
+        float:left;
+        width: 40%;
+        background-color:rgb(136, 255, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        margin-left:5%;
+        margin-right:5%;
+      }
+      div.polaroid:hover {opacity:0.5}
+      div.container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+      @media screen and (max-width:500px){
+        div.polaroid{width:90%;}
+      }
